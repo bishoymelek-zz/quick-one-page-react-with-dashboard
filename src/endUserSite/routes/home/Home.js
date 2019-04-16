@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import logo from './logo.svg';
-import './App.scss';
-import { simpleAction } from './store-redux/SAMPLE/actions';
+import logo from '../../../logo.svg';
+import { simpleAction } from '../../../store-redux/SAMPLE/actions';
 const mapStateToProps = state => ({
   ...state
 })
@@ -10,7 +9,7 @@ const mapDispatchToProps = dispatch => ({
   simpleAction: () => dispatch(simpleAction())
 })
 
-class App extends Component {
+class Home extends Component {
   simpleAction = (event) => {
     this.props.simpleAction();
   }
@@ -42,4 +41,4 @@ class App extends Component {
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default connect(mapStateToProps, mapDispatchToProps)(Home);
