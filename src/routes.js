@@ -2,13 +2,13 @@
  All routes associated to the project
 */
 
-// End-User Site Routes
-import endUserSite from './endUserSite/routes/routesList'
+// Super Admin Site Routes
+import superAdmin from './superAdmin/routes/routesList'
 
 let routeConfig = [];
 // concat all routes
 routeConfig = routeConfig.concat(
-    endUserSite(),
+    superAdmin(),
 );
 
 export default routeConfig;
