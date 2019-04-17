@@ -2,7 +2,7 @@
     Compine Redux reducers here
 */
 import { combineReducers } from 'redux';
-import simpleReducer from './SAMPLE/reducer';
+import sAdminHomeReducer from './Home/reducer';
 export default combineReducers({
-    simpleReducer
+    sAdminHomeReducer
 });
