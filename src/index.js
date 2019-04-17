@@ -9,12 +9,15 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import configureStore from './store-redux';
 import allRoutes from './routes';
 
+// Reset browser styling
+import './reset.scss';
+import 'bootstrap/dist/css/bootstrap.css';
 // Styling
 import './index.scss';
 
 ReactDOM.render(
     <BrowserRouter>
-    <Provider store={configureStore()}>
+        <Provider store={configureStore()}>
             <Switch>
                 {allRoutes.map((route) => (
                     <Route component={route.component} path={route.path} key={route.path} />
