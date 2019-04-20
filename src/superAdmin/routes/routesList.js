@@ -1,8 +1,9 @@
 import homePage from './home'
 import authPage from './auth'
-export default (store) => { 
-    return [
-        { path: '/', component: authPage },
-        { path: '/home', component: homePage },
-    ]
-}
+
+
+const routesList = [
+    { path: '', component: authPage },
+    { path: 'home', component: homePage },
+];
+export default routesList;

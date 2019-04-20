@@ -3,12 +3,9 @@
 */
 
 // Super Admin Site Routes
-import superAdmin from './superAdmin/routes/routesList'
+import adminRoutes from './superAdmin/routes/routesList'
+// End-User Site Routes
+import endUserRoutes from './endUser/routes/routesList'
 
-let routeConfig = [];
-// concat all routes
-routeConfig = routeConfig.concat(
-    superAdmin(),
-);
 
-export default routeConfig;
+export { adminRoutes, endUserRoutes };
