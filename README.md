@@ -1,5 +1,5 @@
-# Rasidi Test
-- Sample page with a modal
+# Create your agency site easily with a dashboard and firebase
+
 ## Available Scripts
 
 In the project directory, you can run:
